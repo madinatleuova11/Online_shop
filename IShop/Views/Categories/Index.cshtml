@@ -1,0 +1,49 @@
+﻿@model IEnumerable<IShop.Models.Category>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<br />
+<ol class="breadcrumb">
+    <li><a href="#">ISHop</a></li>
+    <li class="active">Category</li>
+</ol>
+<p>
+    <a asp-action="Create">
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </button>
+    </a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.categoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.categoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Quantity)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.categoryID">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.categoryID">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.categoryID">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

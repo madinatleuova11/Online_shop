@@ -1,0 +1,42 @@
+﻿@model IEnumerable<IShop.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<br />
+<ol class="breadcrumb">
+    <li><a href="#">ISHop</a></li>
+    <li class="active">Products</li>
+</ol>
+
+<p>
+    <a asp-action="Create">
+        <button type="button" class="btn btn-default">
+            <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+        </button>
+    </a>
+</p>
+<br />
+
+<div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-lg-4">
+                <img class="img-circle" src="@Html.DisplayFor(modelItem => item.Image)" alt="Product image" width="140" height="140">
+                <h2>@Html.DisplayFor(modelItem => item.Name)</h2>
+                <p> Price: @Html.DisplayFor(modelItem => item.Price) ₸</p>
+                <p> Category:  @Html.DisplayFor(modelItem => item.Category.categoryName)</p>
+                <p>
+                    <a asp-action="Details" asp-route-id="@item.productID">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.productID"> <span class="glyphicon glyphicon-remove" aria-hidden="true"></span></a>
+                    <a asp-action="Edit" asp-route-id="@item.productID"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                </p>
+                <p><a href="Baskets" class="btn btn-success">Add To Cart</a></p>
+
+            </div>
+        }
+    </div>
+</div>
