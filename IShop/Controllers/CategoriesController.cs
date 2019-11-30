@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IShop.Data;
 using IShop.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IShop.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly AppDataContext _context;

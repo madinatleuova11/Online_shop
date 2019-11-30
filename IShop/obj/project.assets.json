@@ -13223,11 +13223,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\77479\\source\\repos\\IShop\\IShop\\IShop.csproj",
+      "projectUniqueName": "D:\\IShop\\IShop\\IShop.csproj",
       "projectName": "IShop",
-      "projectPath": "C:\\Users\\77479\\source\\repos\\IShop\\IShop\\IShop.csproj",
+      "projectPath": "D:\\IShop\\IShop\\IShop.csproj",
       "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\77479\\source\\repos\\IShop\\IShop\\obj\\",
+      "outputPath": "D:\\IShop\\IShop\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

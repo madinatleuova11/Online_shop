@@ -9343,11 +9343,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\77479\\source\\repos\\IShop\\UserServiceTests\\UserServiceTests.csproj",
+      "projectUniqueName": "D:\\IShop\\UserServiceTests\\UserServiceTests.csproj",
       "projectName": "UserServiceTests",
-      "projectPath": "C:\\Users\\77479\\source\\repos\\IShop\\UserServiceTests\\UserServiceTests.csproj",
+      "projectPath": "D:\\IShop\\UserServiceTests\\UserServiceTests.csproj",
       "packagesPath": "C:\\Users\\77479\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\77479\\source\\repos\\IShop\\UserServiceTests\\obj\\",
+      "outputPath": "D:\\IShop\\UserServiceTests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9366,8 +9366,8 @@
       "frameworks": {
         "netcoreapp2.1": {
           "projectReferences": {
-            "C:\\Users\\77479\\source\\repos\\IShop\\IShop\\IShop.csproj": {
-              "projectPath": "C:\\Users\\77479\\source\\repos\\IShop\\IShop\\IShop.csproj"
+            "D:\\IShop\\IShop\\IShop.csproj": {
+              "projectPath": "D:\\IShop\\IShop\\IShop.csproj"
             }
           }
         }

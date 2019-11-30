@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IShop.Data;
 using IShop.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IShop.Controllers
 {
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly AppDataContext _context;
@@ -20,6 +22,7 @@ namespace IShop.Controllers
         }
 
         // GET: Products
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             var appDataContext = _context.Products.Include(p => p.Category);
@@ -27,6 +30,7 @@ namespace IShop.Controllers
         }
 
         // GET: Products/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

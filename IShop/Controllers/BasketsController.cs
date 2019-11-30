@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IShop.Data;
 using IShop.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace IShop.Controllers
 {
+    [Authorize]
     public class BasketsController : Controller
     {
         private readonly AppDataContext _context;

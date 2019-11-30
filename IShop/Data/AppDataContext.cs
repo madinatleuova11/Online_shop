@@ -1,4 +1,5 @@
 ﻿using IShop.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace IShop.Data
 {
-    public class AppDataContext : DbContext
+    public class AppDataContext : IdentityDbContext
     {
         public AppDataContext(DbContextOptions options) : base(options)
         {
